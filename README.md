@@ -182,7 +182,8 @@ echo 'net.core.default_qdisc=fq' >> /etc/sysctl.conf
 echo 'net.ipv4.tcp_congestion_control=bbr' >> /etc/sysctl.conf
 sysctl -p
 
-# Nếu bạn dùng Ubuntu/KVM (không container)
+# Nếu bạn dùng Ubuntu/KVM (không container) 20.4
+sudo apt update
 sudo apt install --install-recommends linux-generic-hwe-20.04
 # Sau đó
 sudo reboot
